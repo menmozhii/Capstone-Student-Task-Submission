@@ -1,0 +1,38 @@
+.validate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.validate-form{
+   
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    gap: 10px;
+    padding: 30px;
+    box-shadow:0px 0px 10px  grey ;
+    margin-top: 15px;
+    
+}
+.validate>button:hover{
+  
+box-shadow: 0px 0px 10px blue;  
+  background-color: white;
+  border: 1px solid blue;
+  color:blue;
+}
+  .validate-form>label{
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+   text-transform: capitalize;
+    
+  }
+  .validate-form>input{
+/* width:500px; */
+text-transform: capitalize;
+padding: 10px;
+  }
+.validate-form>button{
+  margin: 10px;
+  padding: 20px;
+}

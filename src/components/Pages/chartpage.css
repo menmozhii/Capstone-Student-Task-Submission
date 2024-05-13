@@ -1,0 +1,16 @@
+.chart-page{
+    display: flex;
+  
+
+}
+.left-page{
+    display: flex;
+    width:400px;
+    flex-direction: column;
+    
+}
+.right-page{
+    display: flex;
+    width:400px;
+    flex-direction: column;
+}

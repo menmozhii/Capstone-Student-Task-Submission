@@ -1,0 +1,42 @@
+.submission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submission_form{
+ 
+    max-width: 700px;
+    display: flex;
+    flex-direction:column;
+gap: 10px;
+padding: 30px;
+box-shadow:0px 0px 10px  grey ;
+
+
+}
+.submission_form>button:hover{
+  box-shadow: 0px 0px 10px blue;  
+  background-color: white;
+  border: 1px solid blue;
+  color:blue;
+  
+
+}
+
+.submission_form >input{
+padding: 10px;
+}
+.submission_form >button{
+margin-top: 15px;
+}
+
+.submission_form>h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: gray;
+}
+.submission_form>label{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+}

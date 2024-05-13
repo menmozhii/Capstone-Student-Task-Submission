@@ -1,0 +1,103 @@
+.addtask-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .addtask-header {
+    height: 100px;
+    background-color: hwb(202 2% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .addtask-title {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .addtask-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+  
+  .addtask-form-container {
+    padding: 10px;
+    width: 70%;
+    background-color: white;
+  }
+  
+  .addtask-form-title {
+    font-size: 24px;
+    font-weight: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 112, 217, 0.954);
+    color: white;
+    padding: 10px;
+  }
+  
+  .addtask-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .addtask-form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .addtask-label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #375160;
+    flex: 1;
+  }
+  
+  .addtask-input {
+    flex: 3;
+    min-width: 40%;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .addtask-checkbox {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .addtask-checkbox-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .addtask-checkbox {
+    margin-right: 10px;
+  }
+  
+  .addtask-checkbox-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #375160;
+    margin: 10px 20px;
+    flex: 1;
+  }
+  
+  .addtask-submit-button {
+    width: 100%;
+    border: none;
+    padding: 15px 20px;
+    background-color: rgba(14, 112, 217, 0.954);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  

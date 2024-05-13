@@ -1,0 +1,114 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top {
+    height: 170px;
+    background-color: #375160;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .top h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 600px;
+  }
+  
+  .login-wrapper {
+    padding: 10px;
+    width: 70%;
+    background-color: white;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #375160;
+    color: white;
+    padding: 10px;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .accordion {
+    background-color: #27333b2e;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .accordion-summary h2 {
+    color: #375160;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .accordion-details {
+    background-color: white;
+  }
+  
+  .task-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .task-summary h3 {
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .task-details {
+    background-color: white;
+  }
+  
+  .task-details h3 {
+    margin-top: 15px;
+  }
+  
+  .task-details a {
+    display: flex;
+    font-size: 24px;
+    margin: 10px 20px;
+    width: 50%;
+  }
+  .delete-icon{
+    color: hsl(0, 93%, 50%);
+    cursor: pointer;
+}
+.delete-icon:hover{
+    transform: scale(1.12);
+    transition: 200ms;
+}
+.edit-icon{
+    color: hsl(99, 53%, 25%);
+    cursor: pointer;
+}
+.edit-icon:hover{
+    transition: 200ms;
+    transform: scale(1.12);
+}
+  

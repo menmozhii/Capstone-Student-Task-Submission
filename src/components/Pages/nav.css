@@ -1,0 +1,12 @@
+.capitalise{
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: 600;
+    color:grey;
+}
+.logout{
+    margin: 20px;
+    height: 30px;
+   padding: 0 ;
+   width: 50px;
+}
