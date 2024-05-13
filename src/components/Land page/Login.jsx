@@ -8,6 +8,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import toast from "react-hot-toast";
 import axios from 'axios'
+import { API_URL } from '../../App';
 
 
 
@@ -31,7 +32,7 @@ const handleLogin= async(e)=>{
   e.preventDefault()
 const data ={email,password}
   try {
-    const response = await axios.post("http://localhost:8000/user/login",data) 
+    const response = await axios.post(`${API_URL}/user/login`,data) 
     // toast.success("login successfully")
 // session storage code
 console.log(response.data);

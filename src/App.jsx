@@ -18,7 +18,7 @@ import StudentList from './components/Pages/StudentList'
 // import ChartPage from './components/Pages/ChartPage'
 
 
- export const API_URL = "http://localhost:8000"
+ export const API_URL = "https://capstone-student-task-submission-backend.onrender.com"
 
 
 

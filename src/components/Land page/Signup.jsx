@@ -7,6 +7,7 @@ import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import toast from "react-hot-toast";
 
 import axios from 'axios'
+import { API_URL } from '../../App';
 
 function Signup() {
 const[name,setName]=useState("");
@@ -29,7 +30,7 @@ const handleSignup= async(e)=>{
 
   try  {
     let data={name,email,password}
-    const response = await axios.post("http://localhost:8000/user/signup",data)
+    const response = await axios.post(`${API_URL}/user/signup`,data)
 toast.success("signup successfully")
 navigate('/login')
   } catch (error) {
