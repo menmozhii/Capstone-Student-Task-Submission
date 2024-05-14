@@ -97,7 +97,7 @@ navigate('/dashboard')
             </button>
             <a  onClick={() => navigate("/signup")}>
               <p>signup?</p>
-              <div><h4>Login credentials</h4><p>email:admin@gmail.com;password:123</p><p>email:Student@gmail.com;password:123</p></div>
+              <div><h4>Credentials</h4><p>email:admin@gmail.com;password:123</p><p>email:Student@gmail.com;password:123</p></div>
             </a>
           </form>
         </div>
