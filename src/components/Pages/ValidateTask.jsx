@@ -67,7 +67,10 @@ function ValidateTask() {
   // Handle task validation update
   const handleUpdate = async () => {
     try {
-      // Prepare form data
+      if(mark ==='' || comments === "")
+        {toast.error("Please fill all fields")}
+      else{
+         // Prepare form data
       const formData = { "task.mark": mark, "task.comments": comments };
       // Send PUT request to update task validation
       const response = await axios.put(`${API_URL}/submission/${id}`,formData, {
@@ -80,6 +83,8 @@ function ValidateTask() {
       toast.success("Validated successfully");
       // Navigate to dashboard after validation
       navigate('/dashboard/homepage');
+      }
+     
     } catch (error) {
       // Display error toast
       toast.error(error.message);
