@@ -40,7 +40,7 @@ function StudentSubmission() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if(frontendDeployedUrl === "" || frontendSourcecode ===""   ){
-      toast.success("Frontend Url are Mandatory")
+      toast.error("Frontend Url are Mandatory")
     }
     else{
       try {
