@@ -120,7 +120,7 @@ function Footer() {
   {/* <!-- Section: Links  --> */}
 
   {/* <!-- Copyright --> */}
-  <div className="text-center p-4" style={{"background-color": "rgba(0, 0, 0, 0.05)"}}>
+  <div className="text-center p-4" style={{"backgroundColor": "rgba(0, 0, 0, 0.05)"}}>
     © 2024 Copyright:
     <a className="text-reset fw-bold" href="https://mdbootstrap.com/">StudentPortal.com</a>
   </div>

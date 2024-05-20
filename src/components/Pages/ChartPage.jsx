@@ -23,7 +23,7 @@ const data = [
    
   ]
 
-console.log(submitted);
+
 const fetchData = async()=>{
   try {
       const response = await axios.get(`${API_URL}/task`, {

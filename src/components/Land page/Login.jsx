@@ -22,6 +22,9 @@ const navigate = useNavigate()
 let [user, setUser] = useState([]);
 let [type, setType] = useState(true);
 
+// loading 
+const [loading,setLoading] =useState(false) 
+
 
 
 const handleType = () => {
@@ -30,12 +33,14 @@ const handleType = () => {
 
 const handleLogin= async(e)=>{
   e.preventDefault()
+setLoading(true)
+
 const data ={email,password}
   try {
     const response = await axios.post(`${API_URL}/user/login`,data) 
-    // toast.success("login successfully")
+     toast.success("login successfully")
 // session storage code
-console.log(response.data);
+setLoading(false)
 if (response.status === 200) {
   sessionStorage.setItem("token", response.data.token);
 
@@ -46,7 +51,7 @@ if (response.status === 200) {
   navigate("/dashboard/home");
 } else {
   toast.error("You are not allowed");
-  
+  setLoading(false)
 }
 
 navigate('/dashboard')
@@ -92,12 +97,18 @@ navigate('/dashboard')
             </div>
 
             <br />
-            <button className="submit_button" type="submit">
+            
+
+            {
+                loading?<button type='submit' className='loading-button'>Loading<span className="dot-span dot-span1">.</span>
+                    <span className="dot-span dot-span2">.</span>
+                    <span className="dot-span dot-span3">.</span></button>:<button className="submit_button" type="submit">
               login in
             </button>
+              }
             <a  onClick={() => navigate("/signup")}>
               <p>signup?</p>
-              <div><h4>Credentials</h4><p>email:admin@gmail.com;password:123</p><p>email:Student@gmail.com;password:123</p></div>
+             
             </a>
           </form>
         </div>

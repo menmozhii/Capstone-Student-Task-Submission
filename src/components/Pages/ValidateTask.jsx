@@ -10,7 +10,7 @@ function ValidateTask() {
   const token = sessionStorage.getItem("token")
   // Extracting id from URL params
   const { id } = useParams();
-console.log(id);
+
   // State variables for task data
   const [data, setData] = useState(null);
   const [title, setTitle] = useState('');

@@ -12,7 +12,7 @@ import '../Pages/sidebar.css'
 
 function Sidebar() {
 const role = sessionStorage.getItem("role")
-console.log(role);
+
 
     const navigate =useNavigate()
   return<>

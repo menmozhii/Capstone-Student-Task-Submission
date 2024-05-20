@@ -15,7 +15,7 @@ function StudentViewTask() {
   const token = sessionStorage.getItem("token")
   
   const [data, setData] = useState([]);
-  console.log(data)
+
 
   const columns = useMemo(
     () => [

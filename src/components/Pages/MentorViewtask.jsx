@@ -28,7 +28,7 @@ function MentorViewtask() {
           Authorization: `Bearer ${token}`
         },
       })
-console.log(response.data.submission);
+
 setData(response.data.submission)
       
     } catch (error) {
@@ -38,7 +38,7 @@ console.log(error);
   }
   useEffect(()=>{
     fetchData()
-  },[])
+  },[data])
 
 
   const handleEdit =(row)=>{
