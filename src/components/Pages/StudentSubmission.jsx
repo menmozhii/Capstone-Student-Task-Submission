@@ -39,35 +39,42 @@ function StudentSubmission() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const submissionData = {
-        student,
-        studentId,
-        task: {
-          title,
-          subTitle,
-          url: {
-            frontendSourcecode,
-            frontendDeployedUrl,
-            backendSourcecode,
-            backendDeployedUrl
-          }
-        }
-      };
-
-      const response = await axios.post(`${API_URL}/submission`, submissionData, {
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`
-        },
-      });
-
-      toast.success("Task submitted successfully");
-      navigate('/dashboard/homepage');
-    } catch (error) {
-      console.error('Error submitting task:', error);
-      toast.error("Error submitting task. Please try again.");
+    if(frontendDeployedUrl === "" || frontendSourcecode ===""   ){
+      toast.success("Frontend Url are Mandatory")
     }
+    else{
+      try {
+        const submissionData = {
+          student,
+          studentId,
+          task: {
+            title,
+            subTitle,
+            url: {
+              frontendSourcecode,
+              frontendDeployedUrl,
+              backendSourcecode,
+              backendDeployedUrl
+            }
+          }
+        };
+  
+        const response = await axios.post(`${API_URL}/submission`, submissionData, {
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`
+          },
+        });
+  
+        toast.success("Task submitted successfully");
+        navigate('/dashboard/homepage');
+      } catch (error) {
+        console.error('Error submitting task:', error);
+        toast.error("Error submitting task. Please try again.");
+      }
+    }
+   
+  
   };
 
   return (
